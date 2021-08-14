@@ -1,48 +1,173 @@
-.App {
-  text-align: center;
+.home-contain{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212931;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./bg.jpg");
+  background-size: auto,								auto,														100% auto;
+  background-position: center,								center,														top center;
+  background-repeat: repeat,								no-repeat,													no-repeat;
+  background-attachment: scroll,								scroll,														scroll;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  margin-bottom: 3rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #ff961dbe;
-  min-height: 100vh;
+.hero-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 100vh;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black
 }
 
-.App-link {
-  color: black;
-  font-size: 1rem;
-  letter-spacing: .8rem;
+.hero-svg{
+  border: 5px solid #12ACDA;
+  padding: 1rem
+}
+
+.hero-svg-w{
+  max-width: 60vw;
+}
+
+.hero-h3 {
+  color: #fff;
+  letter-spacing: 4px;
+  width: 60vw;
+  text-align: center;
+  margin: 3rem;
+  font-style: italic;
+}
+
+.hero-h3 span{
+  color: #12ACDA;
+}
+
+.hero-icon{
+  border: 3px solid #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  size: "2em";
+}
+
+.hero-icon:hover{
+  border: 5px solid #12ACDA;
+}
+
+.main-contain{
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: #212931;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("./bg1.jpg");
+  background-size: auto,								auto,														100% auto;
+  background-position: center,								center,														top center;
+  background-repeat: repeat,								no-repeat,													no-repeat;
+  background-attachment: scroll,								scroll,														scroll;
+}
+
+.main-body{
+  width: 95vw;
+  text-align: center;
+  margin: auto;
+  padding: 5vh 1vh;
+  background-color: #fff;
+}
+
+.main-tabs{
+  background-color: #222931  ;
+}
+
+.main-tab{
+  background-color: black;
+}
+
+.nav-link {
+  color: #12ACDA !important; 
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link.active {
+  background-color: white !important; 
+  color: #222931 !important;
   font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-tabs {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.about-img{
+  max-width: 98%;
+}
+
+.about-title{
+  margin: 1rem 0;
+}
+
+.about-p{
+  width: 90%;
+  margin: auto;
+}
+
+.about-span {
+  font-weight: bold;
+  color: #12ACDA; 
+  letter-spacing: 2px;
+}
+
+.about-text {
+  font-style: italic;
+}
+
+.service-img {
+  max-width: 98%;
+}
+
+.service-section {
+  margin: 2rem 0;
+}
+
+.service-section-img {
+  max-width: 98%;
+}
+
+.footer-contain {
+  background-color: #232a32;
+  text-align: center;
+  padding: 1rem 0;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer-contain p {
+  padding-top: 1rem;
 }
 
 @media (min-width: 600px) {
-  .App-link {
-    font-size: 2rem;
+  .hero-svg{
+    padding: 1.5rem
+  }
+  .main-body{
+    width: 80vw;
+    padding: 5vh;
+  }
+  .about-img{
+    max-width: 90%;
+  }
+  .about-p{
+    width: 60%;
+  }
+  .service-img{
+    max-width: 30%;
+  }
+  .service-section-img {
+    max-width: 25%;
+    margin: 0 1rem;
   }
 }

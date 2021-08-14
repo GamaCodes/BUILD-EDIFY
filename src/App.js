@@ -1,14 +1,12 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="/build_white.svg" alt="logo build white" />
-        <p className="App-link">Construyendo</p>
-        <img src="/car.svg" alt="camion" />
-      </header>
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 
